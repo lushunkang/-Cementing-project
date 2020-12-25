@@ -31,7 +31,6 @@ namespace 演示建立表1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInsertzhuan));
             this.label1 = new System.Windows.Forms.Label();
-            this.JingHao = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@ namespace 演示建立表1
             this.textHeight = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.JingHao = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -53,14 +53,6 @@ namespace 演示建立表1
             this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "井号：";
-            // 
-            // JingHao
-            // 
-            this.JingHao.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.JingHao.Location = new System.Drawing.Point(246, 22);
-            this.JingHao.Name = "JingHao";
-            this.JingHao.Size = new System.Drawing.Size(175, 27);
-            this.JingHao.TabIndex = 1;
             // 
             // label3
             // 
@@ -159,11 +151,21 @@ namespace 演示建立表1
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // JingHao
+            // 
+            this.JingHao.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.JingHao.FormattingEnabled = true;
+            this.JingHao.Location = new System.Drawing.Point(246, 21);
+            this.JingHao.Name = "JingHao";
+            this.JingHao.Size = new System.Drawing.Size(175, 28);
+            this.JingHao.TabIndex = 36;
+            // 
             // FrmInsertzhuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 268);
+            this.Controls.Add(this.JingHao);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.textHeight);
@@ -174,7 +176,6 @@ namespace 演示建立表1
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.JingHao);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -190,7 +191,6 @@ namespace 演示建立表1
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox JingHao;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -201,5 +201,6 @@ namespace 演示建立表1
         private System.Windows.Forms.TextBox textHeight;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox JingHao;
     }
 }

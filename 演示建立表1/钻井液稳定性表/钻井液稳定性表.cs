@@ -140,6 +140,24 @@ namespace 演示建立表1
         {
 
         }
+
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)     //Ctrl+F1
+            {
+                lookup_Click(this, EventArgs.Empty);
+            }
+            if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+            {
+                btnUpdate.Focus();//焦点转移
+                btnUpdate_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Delete)
+            {
+                btnDelete_Click(this, EventArgs.Empty);
+            }
+        }
     }
 
 }

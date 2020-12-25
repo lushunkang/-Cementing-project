@@ -16,11 +16,9 @@ namespace 演示建立表1
         {
             InitializeComponent();
         }
-
+        MysqlDB mysqlDB;
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            MysqlDB mysqlDB;
-            mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
             try
             {
                 string sql = "INSERT 钻井液沿裂缝压力穿透效应及钻井液有效封堵性对井壁稳定性表" +
@@ -53,7 +51,16 @@ namespace 演示建立表1
 
         private void FrmInsert_Load(object sender, EventArgs e)
         {
-
+            mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
+            //绑定数据集
+            IList<string> list = new List<string>();
+            string sql = "SELECT 井号 FROM well";
+            var res = mysqlDB.Get(sql);
+            while (res.Read())
+            {
+                list.Add(res["井号"].ToString());
+            }
+            JingHao.DataSource = list;
         }
 
         private void button2_Click(object sender, EventArgs e)
