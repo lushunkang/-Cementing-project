@@ -130,17 +130,17 @@
     <Compile Include="井眼轨迹\井眼轨迹表.designer.cs">
       <DependentUpon>井眼轨迹表.cs</DependentUpon>
     </Compile>
-    <Compile Include="井表\FrmInsertwell.cs">
+    <Compile Include="石油井基础数据\FrmInsertwell.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="井表\FrmInsertwell.designer.cs">
+    <Compile Include="石油井基础数据\FrmInsertwell.designer.cs">
       <DependentUpon>FrmInsertwell.cs</DependentUpon>
     </Compile>
-    <Compile Include="井表\井表.cs">
+    <Compile Include="石油井基础数据\石油井基础数据.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="井表\井表.designer.cs">
-      <DependentUpon>井表.cs</DependentUpon>
+    <Compile Include="石油井基础数据\石油井基础数据.designer.cs">
+      <DependentUpon>石油井基础数据.cs</DependentUpon>
     </Compile>
     <Compile Include="数据库.cs">
       <SubType>Form</SubType>
@@ -163,11 +163,11 @@
     <Compile Include="地应力大小表\地应力大小表.Designer.cs">
       <DependentUpon>地应力大小表.cs</DependentUpon>
     </Compile>
-    <Compile Include="权限表\权限表.cs">
+    <Compile Include="权限分配管理\权限分配管理.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="权限表\权限表.designer.cs">
-      <DependentUpon>权限表.cs</DependentUpon>
+    <Compile Include="权限分配管理\权限分配管理.designer.cs">
+      <DependentUpon>权限分配管理.cs</DependentUpon>
     </Compile>
     <Compile Include="水化表\FrmpInsertwater.cs">
       <SubType>Form</SubType>
@@ -223,11 +223,11 @@
     <EmbeddedResource Include="井眼轨迹\井眼轨迹表.resx">
       <DependentUpon>井眼轨迹表.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="井表\FrmInsertwell.resx">
+    <EmbeddedResource Include="石油井基础数据\FrmInsertwell.resx">
       <DependentUpon>FrmInsertwell.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="井表\井表.resx">
-      <DependentUpon>井表.cs</DependentUpon>
+    <EmbeddedResource Include="石油井基础数据\石油井基础数据.resx">
+      <DependentUpon>石油井基础数据.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="数据库.resx">
       <DependentUpon>数据库.cs</DependentUpon>
@@ -248,8 +248,8 @@
     <EmbeddedResource Include="地应力大小表\地应力大小表.resx">
       <DependentUpon>地应力大小表.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="权限表\权限表.resx">
-      <DependentUpon>权限表.cs</DependentUpon>
+    <EmbeddedResource Include="权限分配管理\权限分配管理.resx">
+      <DependentUpon>权限分配管理.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="水化表\FrmpInsertwater.resx">
       <DependentUpon>FrmpInsertwater.cs</DependentUpon>
