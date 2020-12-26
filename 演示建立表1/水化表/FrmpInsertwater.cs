@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Text.RegularExpressions;
 namespace 演示建立表1
 {
     public partial class FrmpInsertwater : Form
@@ -22,7 +22,6 @@ namespace 演示建立表1
             MysqlDB mysqlDB;
             mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
             int i = 1;
-         
             try
             {
                 
@@ -76,12 +75,49 @@ namespace 演示建立表1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            Regex regex = new Regex(@"^[0 -9 ] *$");
+            String contents = textL.Text;
 
+            for (int i = contents.Length - 1; i >= 0; i--)
+            {
+                if (regex.IsMatch(contents[i].ToString()))
+                {
+                    ;
+                }
+                else
+                {
+                    MessageBox.Show(contents[i] + "序号格式不正确,请输入数字。");
+                }
+
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void FrmpInsertwater_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSubmit.Focus();//焦点转移
+                btnSubmit_Click(sender, e);
+            }
+         
+        }
+
+        private void 取消_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void JingHao_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
+
+        private void JingHao_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
