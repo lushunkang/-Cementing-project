@@ -68,14 +68,7 @@ namespace 演示建立表1
         private void FrmInsert_Load(object sender, EventArgs e)
         {
             mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
-            //绑定数据集
-            IList<string> list = new List<string>();
-            string sql = "SELECT 井号 FROM well";
-            var res = mysqlDB.Get(sql);
-            while (res.Read()) {
-                list.Add(res["井号"].ToString());
-            }
-            JingHao.DataSource = list;
+            JingHao.DataSource = mysqlDB.getWellNum();
         }
 
         private void label1_Click(object sender, EventArgs e)

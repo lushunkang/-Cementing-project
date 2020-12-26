@@ -19,6 +19,9 @@ namespace 演示建立表1
             showDate();
         }
         MysqlDB mysqlDB;
+        private void 地应力大小表_Load(object sender, EventArgs e)
+        {
+        }
 
 
         public void showDate() {
@@ -39,7 +42,7 @@ namespace 演示建立表1
         private void Insert_Click(object sender, EventArgs e)
         {
             //弹出窗体
-            FrmInsertuser frmInsert = new FrmInsertuser();
+            FrmInsert frmInsert = new FrmInsert();
             frmInsert.Show();
         }
 
@@ -69,7 +72,7 @@ namespace 演示建立表1
             }
             else
             {
-                MessageBox.Show("请选择删除行！");
+                MessageBox.Show("请选择行！");
             }
         }
 
@@ -98,7 +101,7 @@ namespace 演示建立表1
                 if (res)
                 {
                     MessageBox.Show("修改成功");
-                    this.Close();
+                    //this.Close();
                 }
                 else
                 {
@@ -142,6 +145,23 @@ namespace 演示建立表1
         private void num_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void 用户表_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)     //Ctrl+F1
+            {
+                lookup_Click(this, EventArgs.Empty);
+            }
+            if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+            {
+                btnUpdate.Focus();//焦点转移
+                btnUpdate_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Delete)
+            {
+                btnDelete_Click(this, EventArgs.Empty);
+            }
         }
     }
 

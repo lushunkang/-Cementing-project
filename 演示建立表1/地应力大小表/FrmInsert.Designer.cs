@@ -44,8 +44,8 @@ namespace 演示建立表1
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.NiChong = new System.Windows.Forms.RadioButton();
-            this.ZouHua = new System.Windows.Forms.RadioButton();
             this.Zheng = new System.Windows.Forms.RadioButton();
+            this.ZouHua = new System.Windows.Forms.RadioButton();
             this.JingHao = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -147,6 +147,7 @@ namespace 演示建立表1
             // 
             // btnSubmit
             // 
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.btnSubmit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSubmit.Image = global::演示建立表1.Properties.Resources.保存;
             this.btnSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,11 +156,12 @@ namespace 演示建立表1
             this.btnSubmit.Size = new System.Drawing.Size(80, 41);
             this.btnSubmit.TabIndex = 15;
             this.btnSubmit.Text = "  提交";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,7 +171,7 @@ namespace 演示建立表1
             this.button2.Size = new System.Drawing.Size(80, 41);
             this.button2.TabIndex = 33;
             this.button2.Text = "    取消";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
@@ -194,18 +196,6 @@ namespace 演示建立表1
             this.NiChong.Text = "潜在逆冲断层类";
             this.NiChong.UseVisualStyleBackColor = true;
             // 
-            // ZouHua
-            // 
-            this.ZouHua.AutoSize = true;
-            this.ZouHua.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ZouHua.Location = new System.Drawing.Point(0, 41);
-            this.ZouHua.Name = "ZouHua";
-            this.ZouHua.Size = new System.Drawing.Size(135, 24);
-            this.ZouHua.TabIndex = 36;
-            this.ZouHua.TabStop = true;
-            this.ZouHua.Text = "潜在走滑断层类";
-            this.ZouHua.UseVisualStyleBackColor = true;
-            // 
             // Zheng
             // 
             this.Zheng.AutoSize = true;
@@ -217,6 +207,18 @@ namespace 演示建立表1
             this.Zheng.TabStop = true;
             this.Zheng.Text = "潜在正断层类";
             this.Zheng.UseVisualStyleBackColor = true;
+            // 
+            // ZouHua
+            // 
+            this.ZouHua.AutoSize = true;
+            this.ZouHua.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ZouHua.Location = new System.Drawing.Point(0, 41);
+            this.ZouHua.Name = "ZouHua";
+            this.ZouHua.Size = new System.Drawing.Size(135, 24);
+            this.ZouHua.TabIndex = 36;
+            this.ZouHua.TabStop = true;
+            this.ZouHua.Text = "潜在走滑断层类";
+            this.ZouHua.UseVisualStyleBackColor = true;
             // 
             // JingHao
             // 
@@ -252,7 +254,7 @@ namespace 演示建立表1
             this.MinimizeBox = false;
             this.Name = "FrmInsertDiYingLi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "地应力大小录入";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FrmInsert_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
