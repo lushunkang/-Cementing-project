@@ -16,7 +16,7 @@ namespace 演示建立表1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new 启动生成界面());
         }
     }
 }
