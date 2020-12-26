@@ -10,18 +10,15 @@ using System.Windows.Forms;
 
 namespace 演示建立表1
 {
-    public partial class FrmInsert : Form
+    public partial class FrmInsertDiYingLi : Form
     {
-        public FrmInsert()
+        public FrmInsertDiYingLi()
         {
             InitializeComponent();
         }
-
+        MysqlDB mysqlDB;
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            MysqlDB mysqlDB;
-            mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
-
             string type = null;
             if (Zheng.Checked) {
                 type = "潜在正断层类";
@@ -66,6 +63,39 @@ namespace 演示建立表1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmInsert_Load(object sender, EventArgs e)
+        {
+            mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
+            //绑定数据集
+            IList<string> list = new List<string>();
+            string sql = "SELECT 井号 FROM well";
+            var res = mysqlDB.Get(sql);
+            while (res.Read()) {
+                list.Add(res["井号"].ToString());
+            }
+            JingHao.DataSource = list;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textX_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Zheng_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

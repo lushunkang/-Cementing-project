@@ -24,7 +24,8 @@ namespace 演示建立表1
         }
 
 
-        public void showDate() {
+        public void showDate()
+        {
             mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
             string sql = "select * from 地应力大小表";
 
@@ -32,7 +33,8 @@ namespace 演示建立表1
             while (reader.Read())
             {
                 int index = this.dataGridView1.Rows.Add();
-                for (int i = 0; i < dataGridView1.Columns.Count; i++) {
+                for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                {
 
                     this.dataGridView1.Rows[index].Cells[i].Value = reader[i];
                 }
@@ -42,7 +44,7 @@ namespace 演示建立表1
         private void Insert_Click(object sender, EventArgs e)
         {
             //弹出窗体
-            FrmInsert frmInsert = new FrmInsert();
+            FrmInsertDiYingLi frmInsert = new FrmInsertDiYingLi();
             frmInsert.Show();
         }
 
@@ -81,17 +83,18 @@ namespace 演示建立表1
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(change_column.ToString());
-            if (isUpdate) {
+            if (isUpdate)
+            {
                 var row = dataGridView1.Rows[change_column];
 
                 string sql = "UPDATE 地应力大小表 SET " +
-                    "井号='" +row.Cells[1].Value+
+                    "井号='" + row.Cells[1].Value +
                     "',地应力类型='" + row.Cells[2].Value +
                     "',地应力X大小=" + row.Cells[3].Value +
                     ",地应力Y大小=" + row.Cells[4].Value +
                     ",地应力Z大小=" + row.Cells[5].Value +
                     ",深度=" + row.Cells[6].Value +
-                    ",记录时间='" +DateTime.Now+
+                    ",记录时间='" + DateTime.Now +
                     "' WHERE " +
                     "序号=" + row.Cells[0].Value +
                     "";
@@ -146,6 +149,23 @@ namespace 演示建立表1
         {
 
         }
-    }
 
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)     //Ctrl+F1
+            {
+                lookup_Click(this, EventArgs.Empty);
+            }
+            if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+            {
+                btnUpdate.Focus();//焦点转移
+                btnUpdate_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Delete)
+            {
+                btnDelete_Click(this, EventArgs.Empty);
+            }
+        }
+    }
 }
