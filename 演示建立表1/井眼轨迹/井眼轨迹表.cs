@@ -17,11 +17,14 @@ namespace 演示建立表1
         {
             InitializeComponent();
             showDate();
+
         }
+     
+
         MysqlDB mysqlDB;
 
         public void showDate() {
-            dataGridView1.Columns[6].DefaultCellStyle.Format = "yyyy-MM-dd";
+            dataGridView1.Columns[6].DefaultCellStyle.Format = "yyyy-MM-dd hh:mm:ss";
             mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
             string sql = "select * from 井眼轨迹表";
 
@@ -34,12 +37,15 @@ namespace 演示建立表1
                     this.dataGridView1.Rows[index].Cells[i].Value = reader[i];
                 }
             }
+
+            //绑定数据集
+            num.DataSource = mysqlDB.getWellNum();
         }
 
         private void Insert_Click(object sender, EventArgs e)
         {
             //弹出窗体
-            FrmInsertrun frmInsert = new FrmInsertrun();
+            FrmInsertrun frmInsert = new FrmInsertrun(this);
             frmInsert.Show();
         }
 
@@ -80,7 +86,7 @@ namespace 演示建立表1
             //MessageBox.Show(change_column.ToString());
             if (isUpdate) {
                 var row = dataGridView1.Rows[change_column];
-
+                
                 string sql = "UPDATE 井眼轨迹表 SET " +
                     "井号='" + row.Cells[1].Value +
                     "',深度=" + row.Cells[2].Value +
@@ -92,20 +98,20 @@ namespace 演示建立表1
                     "序号=" + row.Cells[0].Value +
                     "";
 
-                Console.WriteLine(sql);
-                var res = mysqlDB.Edit(sql);
-                if (res)
-                {
-                    MessageBox.Show("修改成功");
-                    dataGridView1.Rows.Clear();
-                    showDate();
-
-                }
-                else
-                {
-                    MessageBox.Show("修改失败");
-                }
+                    Console.WriteLine(sql);
+                    var res = mysqlDB.Edit(sql);
+                    if (res)
+                    {
+                        MessageBox.Show("修改成功");
+                        dataGridView1_refresh();
+                    }
+                    else
+                    {
+                        MessageBox.Show("修改失败");
+                    }
+                
             }
+                
             else
             {
                 MessageBox.Show("没有数据可修改");
@@ -114,6 +120,7 @@ namespace 演示建立表1
         }
 
         int change_column;
+
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             isUpdate = true;
@@ -144,6 +151,35 @@ namespace 演示建立表1
         {
 
         }
+
+        //刷新datagridview
+        public void dataGridView1_refresh()
+        {
+            dataGridView1.Rows.Clear();
+            showDate();
+        }
+
+        private void 井眼轨迹表_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+            {
+                btnUpdate.Focus();//焦点转移
+                btnUpdate_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.Delete)
+            {
+                btnDelete.Focus();//焦点转移
+                btnDelete_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                lookup.Focus();//焦点转移
+                lookup_Click(sender, e);
+            }
+        }
+
+        
     }
 
 }
