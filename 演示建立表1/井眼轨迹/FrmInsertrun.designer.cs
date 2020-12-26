@@ -41,7 +41,7 @@ namespace 演示建立表1
             this.textMidu = new System.Windows.Forms.TextBox();
             this.textHeight = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -58,6 +58,7 @@ namespace 演示建立表1
             // 
             this.JingHao.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.JingHao.Location = new System.Drawing.Point(225, 22);
+            this.JingHao.MaxLength = 20;
             this.JingHao.Name = "JingHao";
             this.JingHao.Size = new System.Drawing.Size(175, 27);
             this.JingHao.TabIndex = 1;
@@ -106,33 +107,45 @@ namespace 演示建立表1
             // 
             this.textJinxie.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textJinxie.Location = new System.Drawing.Point(225, 88);
+            this.textJinxie.MaxLength = 20;
             this.textJinxie.Name = "textJinxie";
             this.textJinxie.Size = new System.Drawing.Size(175, 27);
             this.textJinxie.TabIndex = 7;
+            this.textJinxie.Tag = "3";
+            this.textJinxie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textJinxie_KeyPress);
             // 
             // textFangwei
             // 
             this.textFangwei.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textFangwei.Location = new System.Drawing.Point(225, 124);
+            this.textFangwei.MaxLength = 20;
             this.textFangwei.Name = "textFangwei";
             this.textFangwei.Size = new System.Drawing.Size(175, 27);
             this.textFangwei.TabIndex = 8;
+            this.textFangwei.Tag = "3";
+            this.textFangwei.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textFangwei_KeyPress);
             // 
             // textMidu
             // 
             this.textMidu.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textMidu.Location = new System.Drawing.Point(225, 157);
+            this.textMidu.MaxLength = 20;
             this.textMidu.Name = "textMidu";
             this.textMidu.Size = new System.Drawing.Size(175, 27);
             this.textMidu.TabIndex = 9;
+            this.textMidu.Tag = "3";
+            this.textMidu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textMidu_KeyPress);
             // 
             // textHeight
             // 
             this.textHeight.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textHeight.Location = new System.Drawing.Point(225, 55);
+            this.textHeight.MaxLength = 20;
             this.textHeight.Name = "textHeight";
             this.textHeight.Size = new System.Drawing.Size(175, 27);
             this.textHeight.TabIndex = 10;
+            this.textHeight.Tag = "3";
+            this.textHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textHeight_KeyPress);
             // 
             // btnSubmit
             // 
@@ -146,25 +159,25 @@ namespace 演示建立表1
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(265, 206);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 41);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "   取消";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(265, 206);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(96, 41);
+            this.btnCancel.TabIndex = 33;
+            this.btnCancel.Text = "   取消";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // FrmInsertrun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 268);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.textHeight);
             this.Controls.Add(this.textMidu);
@@ -178,10 +191,12 @@ namespace 演示建立表1
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "FrmInsertrun";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "井眼轨迹录入";
             this.Load += new System.EventHandler(this.FrmInsert_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmInsertrun_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,6 +215,6 @@ namespace 演示建立表1
         private System.Windows.Forms.TextBox textMidu;
         private System.Windows.Forms.TextBox textHeight;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

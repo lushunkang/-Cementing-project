@@ -17,11 +17,12 @@ namespace 演示建立表1
         {
             InitializeComponent();
             showDate();
+
         }
         MysqlDB mysqlDB;
 
         public void showDate() {
-            dataGridView1.Columns[6].DefaultCellStyle.Format = "yyyy-MM-dd";
+            dataGridView1.Columns[6].DefaultCellStyle.Format = "yyyy-MM-dd hh:mm:ss";
             mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
             string sql = "select * from 井眼轨迹表";
 
@@ -143,6 +144,26 @@ namespace 演示建立表1
         private void num_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void 井眼轨迹表_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+            {
+                btnUpdate.Focus();//焦点转移
+                btnUpdate_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.Delete)
+            {
+                btnDelete.Focus();//焦点转移
+                btnDelete_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                lookup.Focus();//焦点转移
+                lookup_Click(sender, e);
+            }
         }
     }
 
