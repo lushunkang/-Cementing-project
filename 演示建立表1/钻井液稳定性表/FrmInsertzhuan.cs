@@ -53,19 +53,17 @@ namespace 演示建立表1
         {
             mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
             //绑定数据集
-            IList<string> list = new List<string>();
-            string sql = "SELECT 井号 FROM well";
-            var res = mysqlDB.Get(sql);
-            while (res.Read())
-            {
-                list.Add(res["井号"].ToString());
-            }
-            JingHao.DataSource = list;
+            JingHao.DataSource = mysqlDB.getWellNum();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void JingHao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

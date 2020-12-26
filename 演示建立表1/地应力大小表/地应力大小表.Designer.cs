@@ -38,13 +38,13 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.num = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lookup = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.num = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +68,7 @@
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(1312, 587);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
             this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
@@ -120,15 +121,6 @@
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            // 
-            // num
-            // 
-            this.num.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.num.Location = new System.Drawing.Point(199, 27);
-            this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(193, 27);
-            this.num.TabIndex = 6;
-            this.num.TextChanged += new System.EventHandler(this.num_TextChanged);
             // 
             // label1
             // 
@@ -198,9 +190,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.num);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Insert);
-            this.panel1.Controls.Add(this.num);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.lookup);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -209,6 +201,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1311, 80);
             this.panel1.TabIndex = 8;
+            // 
+            // num
+            // 
+            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.num.FormattingEnabled = true;
+            this.num.Location = new System.Drawing.Point(183, 27);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(175, 28);
+            this.num.TabIndex = 37;
             // 
             // 地应力大小表
             // 
@@ -246,8 +247,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.Button lookup;
-        private System.Windows.Forms.TextBox num;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox num;
     }
 }

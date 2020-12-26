@@ -128,6 +128,7 @@ namespace 演示建立表1
             // 
             // btnSubmit
             // 
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.btnSubmit.Image = global::演示建立表1.Properties.Resources.保存;
             this.btnSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubmit.Location = new System.Drawing.Point(130, 207);
@@ -135,11 +136,12 @@ namespace 演示建立表1
             this.btnSubmit.Size = new System.Drawing.Size(80, 41);
             this.btnSubmit.TabIndex = 15;
             this.btnSubmit.Text = "  提交";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(296, 207);
@@ -148,7 +150,7 @@ namespace 演示建立表1
             this.button2.Size = new System.Drawing.Size(83, 41);
             this.button2.TabIndex = 32;
             this.button2.Text = "  取消";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // JingHao
@@ -159,6 +161,7 @@ namespace 演示建立表1
             this.JingHao.Name = "JingHao";
             this.JingHao.Size = new System.Drawing.Size(175, 28);
             this.JingHao.TabIndex = 36;
+            this.JingHao.SelectedIndexChanged += new System.EventHandler(this.JingHao_SelectedIndexChanged);
             // 
             // FrmInsertzhuan
             // 

@@ -45,6 +45,19 @@ namespace 演示建立表1
                 //conn.Close();
             }
         }
+        //获取井号
+        public IList<string> getWellNum() {
+            IList<string> list = new List<string>();
+            string sql2 = "SELECT 井号 FROM well";
+            var res = this.Get(sql2);
+            while (res.Read())
+            {
+                list.Add(res["井号"].ToString());
+            }
+            return list;
+        }
+
+
 
         //查询方法
         public MySqlDataReader Get(string sql)

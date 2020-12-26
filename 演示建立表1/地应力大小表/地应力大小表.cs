@@ -39,6 +39,9 @@ namespace 演示建立表1
                     this.dataGridView1.Rows[index].Cells[i].Value = reader[i];
                 }
             }
+
+            //绑定数据集
+            num.DataSource = mysqlDB.getWellNum();
         }
 
         private void Insert_Click(object sender, EventArgs e)
@@ -166,6 +169,11 @@ namespace 演示建立表1
             {
                 btnDelete_Click(this, EventArgs.Empty);
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
