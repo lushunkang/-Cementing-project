@@ -130,6 +130,30 @@
     <Compile Include="井眼轨迹\井眼轨迹表.designer.cs">
       <DependentUpon>井眼轨迹表.cs</DependentUpon>
     </Compile>
+    <Compile Include="启动\启动生成界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="启动\启动生成界面.designer.cs">
+      <DependentUpon>启动生成界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="启动\启动飞溅屏.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="启动\启动飞溅屏.designer.cs">
+      <DependentUpon>启动飞溅屏.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户表\FrmInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户表\FrmInsert.designer.cs">
+      <DependentUpon>FrmInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户表\用户表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户表\用户表.designer.cs">
+      <DependentUpon>用户表.cs</DependentUpon>
+    </Compile>
     <Compile Include="石油井基础数据\FrmInsertwell.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,18 +205,6 @@
     <Compile Include="水化表\shuihua.designer.cs">
       <DependentUpon>shuihua.cs</DependentUpon>
     </Compile>
-    <Compile Include="用户表\FrmInsertuser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="用户表\FrmInsertuser.designer.cs">
-      <DependentUpon>FrmInsertuser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="用户表\用户表.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="用户表\用户表.designer.cs">
-      <DependentUpon>用户表.cs</DependentUpon>
-    </Compile>
     <Compile Include="管理员表\manaInsert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +234,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="井眼轨迹\井眼轨迹表.resx">
       <DependentUpon>井眼轨迹表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="启动\启动生成界面.resx">
+      <DependentUpon>启动生成界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="启动\启动飞溅屏.resx">
+      <DependentUpon>启动飞溅屏.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户表\FrmInsert.resx">
+      <DependentUpon>FrmInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户表\用户表.resx">
+      <DependentUpon>用户表.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="石油井基础数据\FrmInsertwell.resx">
       <DependentUpon>FrmInsertwell.cs</DependentUpon>
@@ -256,12 +280,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="水化表\shuihua.resx">
       <DependentUpon>shuihua.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="用户表\FrmInsertuser.resx">
-      <DependentUpon>FrmInsertuser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="用户表\用户表.resx">
-      <DependentUpon>用户表.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员表\manaInsert.resx">
       <DependentUpon>manaInsert.cs</DependentUpon>
