@@ -49,10 +49,7 @@ namespace 演示建立表1
         private void btnDelete_Click(object sender, EventArgs e)
         {
             //遍历选中行
-
-            if (this.dataGridView1.SelectedRows.Count > 0)
-            {
-                foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
             {
                 if (!row.IsNewRow)
                 {
@@ -68,11 +65,6 @@ namespace 演示建立表1
                     }
                     this.dataGridView1.Rows.Remove(row);
                 }
-            }
-            }
-            else
-            {
-                MessageBox.Show("请选择删除行！");
             }
         }
 
@@ -124,21 +116,18 @@ namespace 演示建立表1
 
         private void lookup_Click(object sender, EventArgs e)
         {
-            if (num.Text != "")
+            mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
+            string sql = "select * from shuihua where 井号='" + num.Text +"'";
+
+            var reader = mysqlDB.Get(sql);
+            dataGridView1.Rows.Clear();
+            while (reader.Read())
             {
-                mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
-                string sql = "select * from shuihua where 井号='" + num.Text + "'";
-
-                var reader = mysqlDB.Get(sql);
-                dataGridView1.Rows.Clear();
-                while (reader.Read())
+                int index = this.dataGridView1.Rows.Add();
+                for (int i = 0; i < dataGridView1.Columns.Count; i++)
                 {
-                    int index = this.dataGridView1.Rows.Add();
-                    for (int i = 0; i < dataGridView1.Columns.Count; i++)
-                    {
 
-                        this.dataGridView1.Rows[index].Cells[i].Value = reader[i];
-                    }
+                    this.dataGridView1.Rows[index].Cells[i].Value = reader[i];
                 }
             }
         }
@@ -146,6 +135,35 @@ namespace 演示建立表1
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void 水化作用强度表_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+            {
+                btnUpdate.Focus();//焦点转移
+                btnUpdate_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Escape)
+            {
+                Application.Exit();
+            }
+
+            if (e.KeyCode == Keys.Delete)
+            {
+                btnDelete.Focus();//焦点转移
+                btnDelete_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                lookup.Focus();//焦点转移
+                lookup_Click(sender, e);
+            }
         }
     }
 
