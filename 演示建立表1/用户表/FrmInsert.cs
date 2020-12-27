@@ -169,5 +169,29 @@ namespace 演示建立表1
                 btnSubmit_Click(this, EventArgs.Empty);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox3.PasswordChar == '*')
+            {
+                textBox3.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox3.PasswordChar = '*';
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBox3.PasswordChar == '*')
+            {
+                textBox3.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox3.PasswordChar = '*';
+            }
+        }
     }
 }

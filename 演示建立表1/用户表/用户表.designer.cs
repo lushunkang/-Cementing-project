@@ -38,7 +38,6 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.num = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,6 +45,7 @@
             this.Insert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.num = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -118,15 +118,6 @@
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             // 
-            // num
-            // 
-            this.num.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.num.Location = new System.Drawing.Point(161, 29);
-            this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(193, 27);
-            this.num.TabIndex = 6;
-            this.num.TextChanged += new System.EventHandler(this.num_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -148,10 +139,10 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.num);
             this.panel1.Controls.Add(this.lookup);
             this.panel1.Controls.Add(this.Insert);
             this.panel1.Controls.Add(this.btnUpdate);
-            this.panel1.Controls.Add(this.num);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Location = new System.Drawing.Point(0, 3);
@@ -217,6 +208,15 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // num
+            // 
+            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.num.FormattingEnabled = true;
+            this.num.Location = new System.Drawing.Point(172, 29);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(175, 28);
+            this.num.TabIndex = 38;
+            // 
             // 用户表
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -247,7 +247,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button lookup;
-        private System.Windows.Forms.TextBox num;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -258,5 +257,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox num;
     }
 }
