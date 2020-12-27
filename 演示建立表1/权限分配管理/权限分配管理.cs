@@ -35,6 +35,7 @@ namespace 演示建立表1
                     this.dataGridView1.Rows[index].Cells[i].Value = reader[i];
                 }
             }
+            num.DataSource = mysqlDB.getWellNum2();
         }
                                             
         private void btnDelete_Click(object sender, EventArgs e)

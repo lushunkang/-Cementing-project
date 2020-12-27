@@ -61,7 +61,7 @@ namespace 演示建立表1
             this.JingHao.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.JingHao.Location = new System.Drawing.Point(101, 12);
             this.JingHao.Name = "JingHao";
-            this.JingHao.Size = new System.Drawing.Size(155, 27);
+            this.JingHao.Size = new System.Drawing.Size(195, 27);
             this.JingHao.TabIndex = 1;
             // 
             // label2

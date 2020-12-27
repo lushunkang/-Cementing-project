@@ -35,12 +35,12 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.num = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lookup = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.num = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -98,15 +98,6 @@
             this.Column5.HeaderText = "修改人";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            // 
-            // num
-            // 
-            this.num.AllowDrop = true;
-            this.num.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.num.Location = new System.Drawing.Point(153, 28);
-            this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(193, 25);
-            this.num.TabIndex = 6;
             // 
             // label1
             // 
@@ -171,10 +162,10 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.num);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lookup);
-            this.panel1.Controls.Add(this.num);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.MaximumSize = new System.Drawing.Size(1315, 80);
@@ -182,6 +173,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1315, 80);
             this.panel1.TabIndex = 8;
+            // 
+            // num
+            // 
+            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.num.FormattingEnabled = true;
+            this.num.Location = new System.Drawing.Point(139, 27);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(175, 28);
+            this.num.TabIndex = 38;
             // 
             // powerdata
             // 
@@ -214,7 +214,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button lookup;
-        private System.Windows.Forms.TextBox num;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -222,5 +221,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox num;
     }
 }

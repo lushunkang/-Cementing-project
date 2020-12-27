@@ -57,7 +57,17 @@ namespace 演示建立表1
             return list;
         }
 
-
+        public IList<string> getWellNum2()
+        {
+            IList<string> list = new List<string>();
+            string sql2 = "SELECT 用户账号 FROM user";
+            var res = this.Get(sql2);
+            while (res.Read())
+            {
+                list.Add(res["用户账号"].ToString());
+            }
+            return list;
+        }
 
         //查询方法
         public MySqlDataReader Get(string sql)
