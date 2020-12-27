@@ -62,12 +62,12 @@
             this.Column6,
             this.Column7,
             this.Column9});
-            this.dataGridView1.Location = new System.Drawing.Point(1, 105);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 80);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1312, 627);
+            this.dataGridView1.Size = new System.Drawing.Size(1749, 784);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
@@ -126,19 +126,19 @@
             this.panel1.Controls.Add(this.lookup);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel1.Location = new System.Drawing.Point(1, 25);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1312, 80);
+            this.panel1.Size = new System.Drawing.Size(1749, 80);
             this.panel1.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(155, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(57, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "输入井号";
             // 
@@ -146,10 +146,10 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnDelete.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnDelete.Image = global::演示建立表1.Properties.Resources.删_除_;
+            this.btnDelete.Image = global::演示建立表1.Properties.Resources.删_除_1;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(942, 23);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Location = new System.Drawing.Point(1106, 11);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(88, 37);
             this.btnDelete.TabIndex = 2;
@@ -160,10 +160,10 @@
             // num
             // 
             this.num.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.num.Location = new System.Drawing.Point(235, 27);
-            this.num.Margin = new System.Windows.Forms.Padding(2);
+            this.num.Location = new System.Drawing.Point(163, 21);
+            this.num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(146, 23);
+            this.num.Size = new System.Drawing.Size(193, 27);
             this.num.TabIndex = 6;
             // 
             // Insert
@@ -173,8 +173,8 @@
             this.Insert.ForeColor = System.Drawing.Color.White;
             this.Insert.Image = ((System.Drawing.Image)(resources.GetObject("Insert.Image")));
             this.Insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Insert.Location = new System.Drawing.Point(597, 23);
-            this.Insert.Margin = new System.Windows.Forms.Padding(2);
+            this.Insert.Location = new System.Drawing.Point(646, 11);
+            this.Insert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Insert.Name = "Insert";
             this.Insert.Size = new System.Drawing.Size(88, 37);
             this.Insert.TabIndex = 1;
@@ -189,8 +189,8 @@
             this.lookup.ForeColor = System.Drawing.Color.White;
             this.lookup.Image = global::演示建立表1.Properties.Resources.搜索;
             this.lookup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lookup.Location = new System.Drawing.Point(425, 23);
-            this.lookup.Margin = new System.Windows.Forms.Padding(2);
+            this.lookup.Location = new System.Drawing.Point(417, 11);
+            this.lookup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lookup.Name = "lookup";
             this.lookup.Size = new System.Drawing.Size(88, 37);
             this.lookup.TabIndex = 5;
@@ -203,10 +203,10 @@
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.btnUpdate.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Image = global::演示建立表1.Properties.Resources.修改;
+            this.btnUpdate.Image = global::演示建立表1.Properties.Resources.修改1;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(770, 23);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Location = new System.Drawing.Point(877, 11);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(88, 37);
             this.btnUpdate.TabIndex = 4;
@@ -216,15 +216,15 @@
             // 
             // 水化作用强度表
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1309, 718);
+            this.ClientSize = new System.Drawing.Size(1745, 898);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "水化作用强度表";
             this.Text = "水化作用强度表";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

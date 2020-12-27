@@ -94,15 +94,26 @@ namespace 演示建立表1
                             try
                             {
                                 string sql = "insert into user(用户账号,用户昵称,用户密码,用户真实姓名,用户联系方式,用户地址,用户注册时间) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','" + textBox6.Text + "','" + DateTime.Now + "')";
-
+                               
 
                                 Console.WriteLine(sql);
                                 var res = mysqlDB.Edit(sql);
                                 if (res)
                                 {
                                     MessageBox.Show("添加成功");
-                                    this.Close();
-
+                                    /*string po = "四级";
+                                    string na = "管理员";
+                                    string sql3 = "insert into power(账号,姓名,权限级别,修改时间，修改人) values('" + textBox1.Text + "','" + textBox4.Text + "','" + po + "','" + DateTime.Now + "'，'" + na + "')";
+                                    Console.WriteLine(sql3);
+                                    var res2 = mysqlDB.Edit(sql3);
+                                    if (res2)
+                                    { }
+                                    else
+                                    {
+                                        MessageBox.Show("权限申请失败");
+                                    }*/
+                                        this.Close();
+                                    
                                 }
                                 else
                                 {
