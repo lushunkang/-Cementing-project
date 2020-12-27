@@ -239,6 +239,7 @@
             this.Activated += new System.EventHandler(this.地应力大小表_Activated);
             this.Load += new System.EventHandler(this.地应力大小表_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.井表_KeyDown);
+            this.Leave += new System.EventHandler(this.井表_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

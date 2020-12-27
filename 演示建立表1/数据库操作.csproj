@@ -205,9 +205,7 @@
     <Compile Include="水化表\shuihua.designer.cs">
       <DependentUpon>shuihua.cs</DependentUpon>
     </Compile>
-    <Compile Include="管理员表\manaInsert.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="管理员表\manaInsert.cs" />
     <Compile Include="管理员表\manaInsert.designer.cs">
       <DependentUpon>manaInsert.cs</DependentUpon>
     </Compile>

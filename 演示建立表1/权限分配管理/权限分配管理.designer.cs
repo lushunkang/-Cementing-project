@@ -201,6 +201,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.powerdata_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.powerdata_KeyDown);
+            this.Leave += new System.EventHandler(this.powerdata_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

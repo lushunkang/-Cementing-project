@@ -41,6 +41,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,34 +96,36 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(12, 546);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 27);
+            this.label3.Size = new System.Drawing.Size(112, 27);
             this.label3.TabIndex = 4;
-            this.label3.Text = "注册用户";
+            this.label3.Text = "注册管理员";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(668, 394);
+            this.radioButton1.Location = new System.Drawing.Point(712, 394);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(93, 31);
             this.radioButton1.TabIndex = 5;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "管理员";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(837, 394);
+            this.radioButton2.Location = new System.Drawing.Point(872, 394);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(73, 31);
             this.radioButton2.TabIndex = 6;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "用户";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -136,11 +141,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(986, 317);
+            this.pictureBox1.Location = new System.Drawing.Point(948, 316);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -167,7 +173,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(317, 27);
             this.label5.TabIndex = 11;
-            this.label5.Text = "提示：用户账号是6-20为的纯数字";
+            this.label5.Text = "提示：用户账号是6-20位的纯数字";
             // 
             // label6
             // 
@@ -179,7 +185,43 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(517, 27);
             this.label6.TabIndex = 12;
-            this.label6.Text = "提示：用户密码是6-20为的字母和数字和特殊字符的组合";
+            this.label6.Text = "提示：用户密码是6-20位的字母和数字和特殊字符的组合";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(178, 546);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 27);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "注册用户";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label8.Location = new System.Drawing.Point(125, 345);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(417, 27);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "提示：管理员账号是6-20位的字母数字的组成";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(125, 372);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(517, 27);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "提示：用户密码是6-20位的字母和数字和特殊字符的组合";
             // 
             // 启动生成界面
             // 
@@ -189,6 +231,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 582);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -226,5 +271,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

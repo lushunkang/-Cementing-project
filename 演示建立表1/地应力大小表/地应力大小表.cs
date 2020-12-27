@@ -175,5 +175,10 @@ namespace 演示建立表1
         {
 
         }
+
+        private void 地应力大小表_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

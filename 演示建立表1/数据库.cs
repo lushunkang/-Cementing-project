@@ -51,7 +51,12 @@ namespace 演示建立表1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (启动生成界面.kaiguan == false)
+            {
+                权限表ToolStripMenuItem.Visible = false;
+                管理员表ToolStripMenuItem.Visible = false;
+                用户表ToolStripMenuItem1.Visible = false;
+            }
         }
 
         private void 权限表ToolStripMenuItem_Click(object sender, EventArgs e)

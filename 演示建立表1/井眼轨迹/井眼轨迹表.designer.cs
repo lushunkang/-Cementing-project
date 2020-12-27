@@ -216,6 +216,7 @@
             this.Text = "井眼轨迹信息";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.井眼轨迹表_KeyDown);
+            this.Leave += new System.EventHandler(this.井眼轨迹表_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

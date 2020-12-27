@@ -167,7 +167,10 @@ namespace 演示建立表1
 
         }
 
-
+        private void 钻井液定性表_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }

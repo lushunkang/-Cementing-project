@@ -154,6 +154,11 @@ namespace 演示建立表1
                 btnDelete_Click(this, EventArgs.Empty);
             }
         }
+
+        private void powerdata_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }

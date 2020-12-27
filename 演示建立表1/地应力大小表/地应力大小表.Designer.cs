@@ -226,6 +226,7 @@
             this.Text = "地应力信息";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.地应力大小表_Load);
+            this.Leave += new System.EventHandler(this.地应力大小表_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

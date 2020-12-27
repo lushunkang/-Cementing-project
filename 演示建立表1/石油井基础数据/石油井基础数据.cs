@@ -173,6 +173,11 @@ namespace 演示建立表1
         {
 
         }
+
+        private void 井表_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }

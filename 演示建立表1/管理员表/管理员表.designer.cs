@@ -38,12 +38,12 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.lookup = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
-            this.num = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.num = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,66 +118,6 @@
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             // 
-            // lookup
-            // 
-            this.lookup.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lookup.Image = ((System.Drawing.Image)(resources.GetObject("lookup.Image")));
-            this.lookup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lookup.Location = new System.Drawing.Point(465, 17);
-            this.lookup.Name = "lookup";
-            this.lookup.Size = new System.Drawing.Size(91, 37);
-            this.lookup.TabIndex = 5;
-            this.lookup.Text = "    查询";
-            this.lookup.UseVisualStyleBackColor = true;
-            this.lookup.Click += new System.EventHandler(this.lookup_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(860, 18);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(91, 37);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "    修改";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(1061, 18);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(91, 37);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "   删除";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // Insert
-            // 
-            this.Insert.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Insert.Image = ((System.Drawing.Image)(resources.GetObject("Insert.Image")));
-            this.Insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Insert.Location = new System.Drawing.Point(651, 18);
-            this.Insert.Name = "Insert";
-            this.Insert.Size = new System.Drawing.Size(91, 37);
-            this.Insert.TabIndex = 1;
-            this.Insert.Text = "    新建";
-            this.Insert.UseVisualStyleBackColor = true;
-            this.Insert.Click += new System.EventHandler(this.Insert_Click);
-            // 
-            // num
-            // 
-            this.num.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.num.Location = new System.Drawing.Point(179, 24);
-            this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(193, 30);
-            this.num.TabIndex = 6;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -188,13 +128,78 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "输入管理员账号:";
             // 
+            // lookup
+            // 
+            this.lookup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
+            this.lookup.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lookup.Image = ((System.Drawing.Image)(resources.GetObject("lookup.Image")));
+            this.lookup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lookup.Location = new System.Drawing.Point(465, 17);
+            this.lookup.Name = "lookup";
+            this.lookup.Size = new System.Drawing.Size(91, 37);
+            this.lookup.TabIndex = 5;
+            this.lookup.Text = "    查询";
+            this.lookup.UseVisualStyleBackColor = false;
+            this.lookup.Click += new System.EventHandler(this.lookup_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
+            this.btnUpdate.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(860, 18);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(91, 37);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "    修改";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDelete.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelete.Location = new System.Drawing.Point(1061, 18);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 37);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "   删除";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // Insert
+            // 
+            this.Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
+            this.Insert.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Insert.Image = ((System.Drawing.Image)(resources.GetObject("Insert.Image")));
+            this.Insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Insert.Location = new System.Drawing.Point(651, 18);
+            this.Insert.Name = "Insert";
+            this.Insert.Size = new System.Drawing.Size(91, 37);
+            this.Insert.TabIndex = 1;
+            this.Insert.Text = "    新建";
+            this.Insert.UseVisualStyleBackColor = false;
+            this.Insert.Click += new System.EventHandler(this.Insert_Click);
+            // 
+            // num
+            // 
+            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.num.FormattingEnabled = true;
+            this.num.Location = new System.Drawing.Point(180, 27);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(175, 28);
+            this.num.TabIndex = 37;
+            // 
             // 管理员表
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 676);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.num);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lookup);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -206,6 +211,7 @@
             this.Text = "管理员表";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.地应力大小表_Load);
+            this.Leave += new System.EventHandler(this.管理员表_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -219,7 +225,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button lookup;
-        private System.Windows.Forms.TextBox num;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -229,5 +234,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.ComboBox num;
     }
 }

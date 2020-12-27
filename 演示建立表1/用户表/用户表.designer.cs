@@ -40,12 +40,12 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.num = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lookup = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.Insert = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lookup = new System.Windows.Forms.Button();
+            this.Insert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -137,6 +137,30 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "输入用户账号";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.lookup);
+            this.panel1.Controls.Add(this.Insert);
+            this.panel1.Controls.Add(this.btnUpdate);
+            this.panel1.Controls.Add(this.num);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.MaximumSize = new System.Drawing.Size(1298, 80);
+            this.panel1.MinimumSize = new System.Drawing.Size(1298, 80);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1298, 80);
+            this.panel1.TabIndex = 9;
+            // 
             // lookup
             // 
             this.lookup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
@@ -150,6 +174,20 @@
             this.lookup.Text = "    查询";
             this.lookup.UseVisualStyleBackColor = false;
             this.lookup.Click += new System.EventHandler(this.lookup_Click);
+            // 
+            // Insert
+            // 
+            this.Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
+            this.Insert.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Insert.Image = global::演示建立表1.Properties.Resources.新建;
+            this.Insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Insert.Location = new System.Drawing.Point(652, 21);
+            this.Insert.Name = "Insert";
+            this.Insert.Size = new System.Drawing.Size(88, 37);
+            this.Insert.TabIndex = 1;
+            this.Insert.Text = "    新建";
+            this.Insert.UseVisualStyleBackColor = false;
+            this.Insert.Click += new System.EventHandler(this.Insert_Click);
             // 
             // btnUpdate
             // 
@@ -179,44 +217,6 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // Insert
-            // 
-            this.Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
-            this.Insert.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Insert.Image = global::演示建立表1.Properties.Resources.新建;
-            this.Insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Insert.Location = new System.Drawing.Point(652, 21);
-            this.Insert.Name = "Insert";
-            this.Insert.Size = new System.Drawing.Size(88, 37);
-            this.Insert.TabIndex = 1;
-            this.Insert.Text = "    新建";
-            this.Insert.UseVisualStyleBackColor = false;
-            this.Insert.Click += new System.EventHandler(this.Insert_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.lookup);
-            this.panel1.Controls.Add(this.Insert);
-            this.panel1.Controls.Add(this.btnUpdate);
-            this.panel1.Controls.Add(this.num);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnDelete);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
-            this.panel1.MaximumSize = new System.Drawing.Size(1298, 80);
-            this.panel1.MinimumSize = new System.Drawing.Size(1298, 80);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1298, 80);
-            this.panel1.TabIndex = 9;
-            // 
             // 用户表
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -232,6 +232,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.地应力大小表_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.用户表_KeyDown);
+            this.Leave += new System.EventHandler(this.用户表_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

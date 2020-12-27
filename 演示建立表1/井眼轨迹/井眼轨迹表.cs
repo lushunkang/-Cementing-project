@@ -179,7 +179,10 @@ namespace 演示建立表1
             }
         }
 
-        
+        private void 井眼轨迹表_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }

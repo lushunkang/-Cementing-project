@@ -204,6 +204,7 @@
             this.Name = "钻井液定性表";
             this.Text = "钻井液稳定性分析数据";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Leave += new System.EventHandler(this.钻井液定性表_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

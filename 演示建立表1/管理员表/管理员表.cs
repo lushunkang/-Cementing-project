@@ -37,6 +37,7 @@ namespace 演示建立表1
                     this.dataGridView1.Rows[index].Cells[i].Value = reader[i];
                 }
             }
+            num.DataSource = mysqlDB.getmanaNum2();
         }
 
         private void Insert_Click(object sender, EventArgs e)
@@ -142,6 +143,11 @@ namespace 演示建立表1
                     }
                 }
             }
+        }
+
+        private void 管理员表_Leave(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 
