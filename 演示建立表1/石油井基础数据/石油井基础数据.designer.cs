@@ -131,7 +131,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lookup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.lookup.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lookup.ForeColor = System.Drawing.Color.White;
+            this.lookup.ForeColor = System.Drawing.Color.Black;
             this.lookup.Image = global::演示建立表1.Properties.Resources.搜索;
             this.lookup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lookup.Location = new System.Drawing.Point(425, 21);
@@ -149,7 +149,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.btnUpdate.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Image = global::演示建立表1.Properties.Resources.修改1;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdate.Location = new System.Drawing.Point(873, 21);
@@ -184,7 +184,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.Insert.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Insert.ForeColor = System.Drawing.Color.White;
+            this.Insert.ForeColor = System.Drawing.Color.Black;
             this.Insert.Image = global::演示建立表1.Properties.Resources.新建;
             this.Insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Insert.Location = new System.Drawing.Point(649, 21);
@@ -229,7 +229,7 @@
             this.ClientSize = new System.Drawing.Size(1311, 714);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.ForeColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;

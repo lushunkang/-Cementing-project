@@ -41,11 +41,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.num = new System.Windows.Forms.ComboBox();
             this.lookup = new System.Windows.Forms.Button();
             this.Insert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.num = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +56,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersHeight = 40;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -66,14 +67,17 @@
             this.Column7,
             this.Column8});
             this.dataGridView1.Location = new System.Drawing.Point(0, 80);
-            this.dataGridView1.MaximumSize = new System.Drawing.Size(1284, 590);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(1284, 590);
+            this.dataGridView1.MaximumSize = new System.Drawing.Size(1304, 590);
+            this.dataGridView1.MinimumSize = new System.Drawing.Size(1304, 590);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1284, 590);
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.Size = new System.Drawing.Size(1304, 590);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
+            this.dataGridView1.Leave += new System.EventHandler(this.dataGridView1_Leave);
             // 
             // Column1
             // 
@@ -145,12 +149,21 @@
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnDelete);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.MaximumSize = new System.Drawing.Size(1298, 80);
             this.panel1.MinimumSize = new System.Drawing.Size(1298, 80);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1298, 80);
             this.panel1.TabIndex = 9;
+            // 
+            // num
+            // 
+            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.num.FormattingEnabled = true;
+            this.num.Location = new System.Drawing.Point(172, 29);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(175, 28);
+            this.num.TabIndex = 38;
             // 
             // lookup
             // 
@@ -207,15 +220,6 @@
             this.btnDelete.Text = "   删除";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // num
-            // 
-            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.num.FormattingEnabled = true;
-            this.num.Location = new System.Drawing.Point(172, 29);
-            this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(175, 28);
-            this.num.TabIndex = 38;
             // 
             // 用户表
             // 

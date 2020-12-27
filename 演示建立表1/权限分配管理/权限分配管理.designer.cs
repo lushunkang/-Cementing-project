@@ -115,7 +115,7 @@
             this.lookup.AllowDrop = true;
             this.lookup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.lookup.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lookup.ForeColor = System.Drawing.Color.White;
+            this.lookup.ForeColor = System.Drawing.Color.Black;
             this.lookup.Image = global::演示建立表1.Properties.Resources.搜索;
             this.lookup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lookup.Location = new System.Drawing.Point(394, 22);
@@ -131,7 +131,7 @@
             this.btnUpdate.AllowDrop = true;
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(161)))), ((int)(((byte)(243)))));
             this.btnUpdate.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Image = global::演示建立表1.Properties.Resources.修改1;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdate.Location = new System.Drawing.Point(618, 22);
@@ -190,7 +190,7 @@
             this.ClientSize = new System.Drawing.Size(1307, 710);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.ForeColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
