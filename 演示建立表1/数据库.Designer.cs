@@ -55,77 +55,79 @@
             this.井眼轨迹表ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1311, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1313, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 井表ToolStripMenuItem
             // 
             this.井表ToolStripMenuItem.Name = "井表ToolStripMenuItem";
-            this.井表ToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
+            this.井表ToolStripMenuItem.Size = new System.Drawing.Size(104, 21);
             this.井表ToolStripMenuItem.Text = "石油井基础数据";
             this.井表ToolStripMenuItem.Click += new System.EventHandler(this.井表ToolStripMenuItem_Click);
             // 
             // 用户表ToolStripMenuItem
             // 
             this.用户表ToolStripMenuItem.Name = "用户表ToolStripMenuItem";
-            this.用户表ToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.用户表ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.用户表ToolStripMenuItem.Text = "地应力信息";
             this.用户表ToolStripMenuItem.Click += new System.EventHandler(this.用户表ToolStripMenuItem_Click);
             // 
             // 权限表ToolStripMenuItem
             // 
             this.权限表ToolStripMenuItem.Name = "权限表ToolStripMenuItem";
-            this.权限表ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.权限表ToolStripMenuItem.Size = new System.Drawing.Size(92, 21);
             this.权限表ToolStripMenuItem.Text = "权限分配管理";
             this.权限表ToolStripMenuItem.Click += new System.EventHandler(this.权限表ToolStripMenuItem_Click);
             // 
             // 用户表ToolStripMenuItem1
             // 
             this.用户表ToolStripMenuItem1.Name = "用户表ToolStripMenuItem1";
-            this.用户表ToolStripMenuItem1.Size = new System.Drawing.Size(81, 24);
+            this.用户表ToolStripMenuItem1.Size = new System.Drawing.Size(68, 21);
             this.用户表ToolStripMenuItem1.Text = "用户信息";
             this.用户表ToolStripMenuItem1.Click += new System.EventHandler(this.用户表ToolStripMenuItem1_Click);
             // 
             // 钻井液稳定性表ToolStripMenuItem
             // 
             this.钻井液稳定性表ToolStripMenuItem.Name = "钻井液稳定性表ToolStripMenuItem";
-            this.钻井液稳定性表ToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.钻井液稳定性表ToolStripMenuItem.Size = new System.Drawing.Size(116, 21);
             this.钻井液稳定性表ToolStripMenuItem.Text = "钻井液稳定性分析";
             this.钻井液稳定性表ToolStripMenuItem.Click += new System.EventHandler(this.钻井液稳定性表ToolStripMenuItem_Click);
             // 
             // 水化效应表ToolStripMenuItem
             // 
             this.水化效应表ToolStripMenuItem.Name = "水化效应表ToolStripMenuItem";
-            this.水化效应表ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.水化效应表ToolStripMenuItem.Size = new System.Drawing.Size(92, 21);
             this.水化效应表ToolStripMenuItem.Text = "水化效应信息";
             this.水化效应表ToolStripMenuItem.Click += new System.EventHandler(this.水化效应表ToolStripMenuItem_Click);
             // 
             // 管理员表ToolStripMenuItem
             // 
             this.管理员表ToolStripMenuItem.Name = "管理员表ToolStripMenuItem";
-            this.管理员表ToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.管理员表ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.管理员表ToolStripMenuItem.Text = "管理员信息";
             this.管理员表ToolStripMenuItem.Click += new System.EventHandler(this.管理员表ToolStripMenuItem_Click);
             // 
             // 井眼轨迹表ToolStripMenuItem
             // 
             this.井眼轨迹表ToolStripMenuItem.Name = "井眼轨迹表ToolStripMenuItem";
-            this.井眼轨迹表ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.井眼轨迹表ToolStripMenuItem.Size = new System.Drawing.Size(92, 21);
             this.井眼轨迹表ToolStripMenuItem.Text = "井眼轨迹信息";
             this.井眼轨迹表ToolStripMenuItem.Click += new System.EventHandler(this.井眼轨迹表ToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 714);
+            this.ClientSize = new System.Drawing.Size(1313, 722);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximumSize = new System.Drawing.Size(1329, 761);
             this.MinimumSize = new System.Drawing.Size(1329, 761);
             this.Name = "Form1";

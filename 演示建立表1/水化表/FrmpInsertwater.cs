@@ -21,7 +21,6 @@ namespace 演示建立表1
         {
             MysqlDB mysqlDB;
             mysqlDB = new MysqlDB("49.235.232.46", 3306, "cement", "123456");
-            int i = 1;
             try
             {
                 
