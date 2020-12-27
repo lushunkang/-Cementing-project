@@ -182,9 +182,10 @@ namespace 演示建立表1
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "FrmInsertzhuan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "钻井液稳定性录入";
+            this.Text = "钻井液稳定性数据录入";
             this.Load += new System.EventHandler(this.FrmInsert_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

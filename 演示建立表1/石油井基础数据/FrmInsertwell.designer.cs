@@ -206,7 +206,7 @@ namespace 演示建立表1
             this.MinimizeBox = false;
             this.Name = "FrmInsertwell";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "井表录入";
+            this.Text = "石油井基础数据录入";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmInsertwell_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

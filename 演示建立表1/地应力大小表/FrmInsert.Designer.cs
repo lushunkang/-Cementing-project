@@ -250,11 +250,12 @@ namespace 演示建立表1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmInsertDiYingLi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = "地应力信息添加";
             this.Load += new System.EventHandler(this.FrmInsert_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

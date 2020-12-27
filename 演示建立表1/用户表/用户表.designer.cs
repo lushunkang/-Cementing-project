@@ -228,7 +228,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "用户表";
-            this.Text = "用户表";
+            this.Text = "用户信息";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.地应力大小表_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.用户表_KeyDown);

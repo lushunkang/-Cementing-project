@@ -37,12 +37,12 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.num = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Insert = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lookup = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.num = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -118,6 +118,16 @@
             this.panel1.Size = new System.Drawing.Size(1280, 80);
             this.panel1.TabIndex = 9;
             // 
+            // num
+            // 
+            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.num.FormattingEnabled = true;
+            this.num.Location = new System.Drawing.Point(158, 28);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(175, 28);
+            this.num.TabIndex = 36;
+            this.num.SelectedIndexChanged += new System.EventHandler(this.num_SelectedIndexChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -181,16 +191,6 @@
             this.btnUpdate.Text = "    修改";
             this.btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // num
-            // 
-            this.num.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.num.FormattingEnabled = true;
-            this.num.Location = new System.Drawing.Point(158, 28);
-            this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(175, 28);
-            this.num.TabIndex = 36;
-            this.num.SelectedIndexChanged += new System.EventHandler(this.num_SelectedIndexChanged);
-            // 
             // 钻井液定性表
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -200,8 +200,9 @@
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "钻井液定性表";
-            this.Text = "地应力大小表";
+            this.Text = "钻井液稳定性分析数据";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

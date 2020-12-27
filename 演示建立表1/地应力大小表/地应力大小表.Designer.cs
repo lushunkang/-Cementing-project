@@ -220,9 +220,10 @@
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(1329, 761);
             this.Name = "地应力大小表";
-            this.Text = "地应力大小表";
+            this.Text = "地应力信息";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.地应力大小表_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

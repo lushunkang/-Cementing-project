@@ -67,7 +67,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1315, 601);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
-           
             // 
             // Column1
             // 
@@ -214,7 +213,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "井眼轨迹表";
-            this.Text = "井眼轨迹表";
+            this.Text = "井眼轨迹信息";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.井眼轨迹表_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
