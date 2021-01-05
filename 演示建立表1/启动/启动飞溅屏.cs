@@ -32,5 +32,10 @@ namespace 演示建立表1
 
 
         }
+
+        private void 启动飞溅屏_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

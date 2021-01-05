@@ -40,8 +40,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(137, 101);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(205, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(250, 50);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(50, 358);
+            this.progressBar1.Location = new System.Drawing.Point(111, 397);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(429, 15);
             this.progressBar1.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(532, 396);
+            this.ClientSize = new System.Drawing.Size(687, 450);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -74,6 +74,7 @@
             this.Name = "启动飞溅屏";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "启动飞溅屏";
+            this.Load += new System.EventHandler(this.启动飞溅屏_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
