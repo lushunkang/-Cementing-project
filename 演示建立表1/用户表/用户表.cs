@@ -169,6 +169,11 @@ namespace 演示建立表1
         {
             this.Close();
         }
+
+        private void dataGridView1_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }
